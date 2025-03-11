@@ -56,11 +56,40 @@ code:not(pre code) {
 }
 
 pre {
+    padding: 1em;
+    border-radius: 6px;
     overflow: auto;
-    padding: 0.3em;
 
     code {
-        padding: 0;
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    table {
+        width: auto;
+        border: none !important;
+        background-color: transparent !important;
+
+        td {
+            border: none !important;
+            padding: 0 !important;
+            vertical-align: top;
+
+            &:first-child {
+                user-select: none;
+                opacity: 0.8;
+                color: var(--foreground) !important;
+            }
+
+            &:last-child {
+                width: 100%;
+                padding-left: 1em !important;
+            }
+        }
+
+        tr {
+            background-color: transparent !important;
+        }
     }
 }
 
