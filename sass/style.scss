@@ -82,27 +82,26 @@ pre {
 }
 
 table {
-    border-spacing: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow: hidden;
 
-    th, td {
-        border-width: 1px;
-        border-style: solid;
-        border-left-style: none;
-        padding: 0.2em;
-
-        &:first-child {
-            border-left-width: 1px;
-            border-left-style: solid;
-        }
+    th,
+    td {
+        padding: 0.75em;
     }
 
     th {
-        border-top-width: 1px;
-        border-top-style: solid;
+        font-weight: 600;
     }
 
-    td {
-        border-top-style: none;
+    tr {
+        transition: background 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--tertiary);
+        }
     }
 }
 
