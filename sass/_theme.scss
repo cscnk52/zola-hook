@@ -97,7 +97,9 @@ body {
     color: var(--secondary);
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
     color: var(--accent);
 }
 
@@ -139,11 +141,13 @@ hr {
 }
 
 table {
-    th, td {
+    th,
+    td {
         border-color: var(--table-border);
     }
 
-    thead, tr:nth-child(even) {
+    thead,
+    tr:nth-child(even) {
         background-color: var(--table-row);
     }
 }
